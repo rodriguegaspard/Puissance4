@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "2O1biqAQuHLQ/Nuu9pEM81iq21iEkD/Hlsp1nGUfVapEzm8+3/MpKU6dCS+jaSeoTjt/ByG/lxDHXpdy3ahjBQ==",
+  "success": true,
+  "projectFilePath": "/home/rosco/Projects/C#/Power4/Game/Game.csproj",
+  "expectedPackageFiles": [
+    "/home/rosco/.nuget/packages/microsoft.aspnetcore.app.ref/5.0.0/microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
