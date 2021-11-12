@@ -15,8 +15,13 @@ namespace Game {
             return _column;
         }
 
+        public bool isFull()
+        {
+            return _column.Count >= maxMoves;
+        }
+
         public void addMove(char symbol) {
-            if(_column.Count >= maxMoves)
+            if(this.isFull())
             {
                 throw new ArgumentNullException();
             }
@@ -55,6 +60,11 @@ namespace Game {
             foreach(Column column in _grid){
                 column.getColumn().Clear();
             }
+        }
+
+        public bool isValidMove(int move)
+        {
+            return (move > this.maxColumns && move < this.maxColumns && _grid[move].isFull());
         }
 
         public bool checkForWinner(char player)

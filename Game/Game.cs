@@ -32,7 +32,7 @@ namespace Game
             //Chaque joueur joue chacun son tour. Le jeu est terminé si la grille est pleine ou si un des joueurs a gagné
             foreach(IPlayer p in _players)
             {
-                _grid.updateGrid(p.makeAMove(_grid.maxColumns), p.Symbol);
+                _grid.updateGrid(p.makeAMove(_grid), p.Symbol);
             }
         }
     }

@@ -5,12 +5,12 @@ namespace Game{
         //Les joueurs sont représentés par un caractère
         public char Symbol {get; set; }
 
-        public int makeAMove(int columns){
-            Console.WriteLine("Entrez un numéro entre 1 et " + columns + ".");
+        public int makeAMove(Grid grid){
+            Console.WriteLine("Entrez un numéro entre 1 et " + grid.maxColumns + ".");
             string input = Console.ReadLine();
             int move = -1;
 
-            while(!Int32.TryParse(input, out move) || move > columns || move < columns)
+            while(!Int32.TryParse(input, out move) || !grid.isValidMove(move))
             {
                 Console.WriteLine("ERREUR. Veuillez entrer un numéro de colonne valide!");
                 input = Console.ReadLine();
