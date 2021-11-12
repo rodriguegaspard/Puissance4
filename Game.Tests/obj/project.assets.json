@@ -4644,11 +4644,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/rosco/Projects/C#/Power4/Game.Tests/Game.Tests.csproj",
+      "projectUniqueName": "/home/rosco/Projects/C#/Power4/Puissance4/Game.Tests/Game.Tests.csproj",
       "projectName": "Game.Tests",
-      "projectPath": "/home/rosco/Projects/C#/Power4/Game.Tests/Game.Tests.csproj",
+      "projectPath": "/home/rosco/Projects/C#/Power4/Puissance4/Game.Tests/Game.Tests.csproj",
       "packagesPath": "/home/rosco/.nuget/packages/",
-      "outputPath": "/home/rosco/Projects/C#/Power4/Game.Tests/obj/",
+      "outputPath": "/home/rosco/Projects/C#/Power4/Puissance4/Game.Tests/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/rosco/.nuget/NuGet/NuGet.Config"
@@ -4657,14 +4657,15 @@
         "net5.0"
       ],
       "sources": {
+        "/home/rosco/.nuget/NuGet/Microsoft.NET.Test.Sdk": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "/home/rosco/Projects/C#/Power4/Game/Game.csproj": {
-              "projectPath": "/home/rosco/Projects/C#/Power4/Game/Game.csproj"
+            "/home/rosco/Projects/C#/Power4/Puissance4/Game/Game.csproj": {
+              "projectPath": "/home/rosco/Projects/C#/Power4/Puissance4/Game/Game.csproj"
             }
           }
         }

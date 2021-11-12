@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "CPQWy59jkSAZ+ppLwVEwa6U30Lk2jKDUuoNC0f9pArwon1Dn0Q9tLtcZla80lGAGjpoNdkkxIdcqJBekmuHN/A==",
+  "dgSpecHash": "AGQpzx+6BZvooCvnRWAPEzcY5ND8xANdn+bCl0o/EOSDuwKdsUYxBPhHo+ie8B/pn8tSBjd/prRDAq5krLfG9g==",
   "success": true,
-  "projectFilePath": "/home/rosco/Projects/C#/Power4/Game.Tests/Game.Tests.csproj",
+  "projectFilePath": "/home/rosco/Projects/C#/Power4/Puissance4/Game.Tests/Game.Tests.csproj",
   "expectedPackageFiles": [
     "/home/rosco/.nuget/packages/microsoft.codecoverage/16.5.0/microsoft.codecoverage.16.5.0.nupkg.sha512",
     "/home/rosco/.nuget/packages/microsoft.csharp/4.0.1/microsoft.csharp.4.0.1.nupkg.sha512",

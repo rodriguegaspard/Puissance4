@@ -10,30 +10,29 @@ namespace Game
 
         public void newGrid(int rows, int columns)
         {
-            _grid = new Grid();
-            _grid.maxColumns = columns;
-            for(int i = 0; i < columns; i++)
-            {
-                _grid.addColumn(rows);
-            }
+            _grid = new Grid(columns, rows);
         }
 
         public void newPlayer(char symb)
         {
             Player newPlayer = new Player();
-            newPlayer.symbol = symb;
+            newPlayer.Symbol = symb;
+            _players.Add(newPlayer);
+        }
+
+        public void newDumbAI(char symb)
+        {
+            DumbAI newPlayer = new DumbAI();
+            newPlayer.Symbol = symb;
             _players.Add(newPlayer);
         }
 
         public void play()
         {
-            bool WIN = false;
-            while(!WIN){
-                foreach(IPlayer p in _players)
-                {
-                    _grid.updateGrid(p.makeAMove(_grid.maxColumns), p.getSymbol());
-                }
-
+            //Chaque joueur joue chacun son tour. Le jeu est terminé si la grille est pleine ou si un des joueurs a gagné
+            foreach(IPlayer p in _players)
+            {
+                _grid.updateGrid(p.makeAMove(_grid.maxColumns), p.Symbol);
             }
         }
     }

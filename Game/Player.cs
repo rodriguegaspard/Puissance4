@@ -6,7 +6,7 @@ namespace Game{
         public char Symbol {get; set; }
 
         public int makeAMove(int columns){
-            Console.WriteLine("Entrez un numéro entre");
+            Console.WriteLine("Entrez un numéro entre 1 et " + columns + ".");
             string input = Console.ReadLine();
             int move = -1;
 
@@ -19,9 +19,5 @@ namespace Game{
             return move;
     }
 
-    public char getSymbol()
-    {
-        return player.symbol;
-    }
 }
 }
